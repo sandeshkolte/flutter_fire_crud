@@ -42,6 +42,7 @@ class _PostScreenState extends State<FirestorePost_Screen> {
 
                         return Card(
                           child: ListTile(
+                              tileColor: Colors.blueGrey[100],
                               subtitle: currentUser != null
                                   ? Text(currentUser!.email ?? "")
                                   : const Text("Unknown"),
@@ -91,6 +92,7 @@ class _PostScreenState extends State<FirestorePost_Screen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: const Text('Firestore'),
+        backgroundColor: Colors.grey[100],
         centerTitle: true,
         actions: [
           IconButton(
